@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.body {
+  height: 100%;
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensure the container takes at least the full viewport height */
+}
+
+.btn btn-outline-danger {
+  height: 10px;
+  width: 10px;
+}
+
+.icon_envelope {
+  width: 44px;
+  height: 44px;
+  fill: black;
+  position: absolute;
+  right: 12%;
+  padding: 10px;
+}
+
+.icon_instagram {
+  width: 45px;
+  height: 45px;
+  fill: black;
+  position: absolute;
+  right: 15%;
+  padding: 10px;
+
+}
+
+.body footer {
+  bottom: 100%;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.nav-link {
+  color: white
+}
+
+.texto {
+  margin-bottom: 90px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+.nav-custom-bg {
+  background-color: #395144;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #4E6C50;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 13px;
+  width: 250px;
+  transition: all 0.5s;
+  outline: none;
+  margin-bottom: 50px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  border: none;
+  color: white;
+}
+
+.btn span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 15px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn:hover {
+  background-color: #4E6C50;
+  /* Cor de fundo quando o mouse passa por cima */
+}
+
+.btn:focus {
+  background-color: #4E6C50;
+  /* Cor de fundo quando o botão está com foco */
+  outline: none;
+  /* Remove a borda de foco padrão */
+}
+
+.card-header {
+  background-color: #395144;
+  color: #F0EBCE;
+}
+
+.align-self-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  outline: solid 2px #AA8B56;
+  transition: outline 0.3s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  /* Adiciona uma transição suave para a borda e para as outras propriedades */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.rodape {
+  width: 100%;
+}
+
+:root {
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+
+}
+
+footer {
+  width: 100%;
+  color: var(--color-neutral-40);
+}
+
+.paragraph {
+  color: var(--color-neutral-30);
+  font-family: "Inter";
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  background-color: var(--color-neutral-10);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  font-family: "Inter";
+}
+
+.footer-list .footer-link {
+  color: var(--color-neutral-30);
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: #e9980e;
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-0);
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: #e9980e;
+  border: none;
+  color: var(--color-neutral-40);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.logo_footer {
+  height: 70px;
+  width: 80px;
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-neutral-0);
+  font-size: 0.9rem;
+  padding: 1rem;
+  font-weight: 100;
+  font-family: "Inter";
+}
+
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
+
+
+#teste {
+  padding-left: 75%;
+}
+
+#titulo {
+  padding-left: 2%;
+}
+
+.scrollable-card {
+  max-height: 429.49px;
+  /* Defina a altura máxima desejada para os cards */
+  overflow-y: auto;
+  /* Permite rolagem vertical quando o conteúdo exceder a altura máxima */
+}
+
+.scrollable-content {
+  max-height: 100%;
+  /* Ajusta a altura máxima do conteúdo do card */
+  overflow-y: auto;
+  /* Permite rolagem vertical quando o conteúdo exceder a altura máxima */
+}
+
+/* 
+.card-text {
+  max-height: 100px; */
+/* Altura máxima desejada */
+/* overflow: hidden;
+  position: relative;
+} */
+
+/* .card-text::after { */
+/* Reticências para indicar texto truncado */
+/* position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white; */
+/* Cor de fundo do texto reticências */
+/* cursor: pointer; */
+/* Cursor de apontar quando hover */
+/* color: blue; */
+/* Cor do botão "Mostrar mais" */
+/* } */
+
+
+#sombrinha {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* cores
+  verdes: #395144 / rgb(57, 81, 68)  e #4E6C50 / rgb(78, 108, 80) 
+  marrom: #AA8B56 / rgb(170, 139, 86)
+  off white: #F0EBCE / rgb(240, 235, 206)
+  */
